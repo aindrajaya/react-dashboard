@@ -58,28 +58,28 @@ const App = () => {
           <div>
             <Routes>
               {/*Dashboard */}
-              <Route path="/" element="ECommerce"/>
-              <Route path="/ecommerce" element="ECommerce"/>
+              <Route path="/" element={<Ecommerce />}/>
+              <Route path="/ecommerce" element={<Ecommerce />}/>
 
               {/*Pages */}
-              <Route path="/orders" element="Orders page"/>
-              <Route path="/employees" element="Employees page"/>
-              <Route path="/customers" element="Customers page"/>
+              <Route path="/orders" element={<Orders />}/>
+              <Route path="/employees" element={<Employees />}/>
+              <Route path="/customers" element={<Customers />}/>
 
               {/*Apps */}
-              <Route path="/calendar" element="Calendar"/>
-              <Route path="/kanban" element="Kanban"/>
-              <Route path="/editor" element="Editor"/>
-              <Route path="/color-picker" element="Color Picker"/>
+              <Route path="/calendar" element={<Calendar />}/>
+              <Route path="/kanban" element={<Kanban/>}/>
+              <Route path="/editor" element={<Editor/>}/>
+              <Route path="/color-picker" element={<ColorPicker />}/>
 
               {/*Charts */}
-              <Route path="/line" element="Line"/>
-              <Route path="/area" element="Area"/>
-              <Route path="/bar" element="Bar"/>
-              <Route path="/pie" element="Pie"/>
-              <Route path="/financial" element="Financial"/>
-              <Route path="/color-mapping" element="Color Mapping"/>
-              <Route path="/pyramid" element="Pyramid"/>
+              <Route path="/line" element={<Line />}/>
+              <Route path="/area" element={<Area />}/>
+              <Route path="/bar" element={<Bar />}/>
+              <Route path="/pie" element={<Pie />}/>
+              <Route path="/financial" element={<Financial />}/>
+              <Route path="/color-mapping" element={<ColorMapping />}/>
+              <Route path="/pyramid" element={<Pyramid/>}/>
             </Routes>
           </div>
         </div>
