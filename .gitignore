@@ -30,3 +30,6 @@ notes.md
 # lock files
 yarn.lock
 package-lock.json
+
+# image issues
+issues
