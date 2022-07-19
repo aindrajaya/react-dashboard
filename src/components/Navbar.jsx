@@ -37,7 +37,7 @@ const Navbar = () => {
         color="blue"
         icon={<AiOutlineMenu />}
       />
-      {/* <div className='flex'>
+      <div className='flex'>
         <NavButton 
           title="Cart"
           customFunc={() => handleClick('cart')}
@@ -80,7 +80,7 @@ const Navbar = () => {
             <MdKeyboardArrowDown className='text-gray-400 text-14'/>
           </div>
         </TooltipComponent>
-      </div> */}
+      </div>
     </div>
   )
 }
