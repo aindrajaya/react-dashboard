@@ -1,5 +1,5 @@
 import React from 'react';
-import { GridComponent, ColumnsDirective, Page, Search, Edit, Inject, ColumnDirective, Sort } from '@syncfusion/ej2-react-grids';
+import { GridComponent, ColumnsDirective, Page, Search, Edit, Inject, ColumnDirective, Sort, Toolbar } from '@syncfusion/ej2-react-grids';
 
 import { employeesData, employeesGrid } from '../data/dummy';
 import { Header } from '../components';
@@ -12,6 +12,7 @@ const Employees = () => {
         dataSource={employeesData}
         allowPaging
         allowSorting
+        toolbar={['Search']}
         width="auto"
       >
         <ColumnsDirective>
@@ -19,7 +20,7 @@ const Employees = () => {
             <ColumnDirective key={idx} {...item}/>
           ))}
         </ColumnsDirective>
-        <Inject services={[Page, Search, Sort]}/>
+        <Inject services={[Page, Search, Sort, Toolbar]}/>
       </GridComponent>
     </div>
   )
