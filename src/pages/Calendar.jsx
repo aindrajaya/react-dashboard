@@ -35,7 +35,7 @@ const Calendar = () => {
         <Inject services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}/>
       </ScheduleComponent>
       <PropertyPane>
-        {/* <table
+        <table
           style={{width: '100%', background: 'white'}}
         >
           <tbody>
@@ -51,7 +51,7 @@ const Calendar = () => {
               </td>
             </tr>
           </tbody>
-        </table> */}
+        </table>
       </PropertyPane>
     </div>
   )
