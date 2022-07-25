@@ -14,6 +14,9 @@ const Kanban = () => {
         dataSource={kanbanData}
         cardSettings={{contentField: 'Summary', headerField:'Id'}}
       >
+        <ColumnsDirective>
+          {kanbanGrid.map((item, idx) => <ColumnDirective key={idx} {...item}/>)}
+        </ColumnsDirective>
       </KanbanComponent>  
     </div>
   )
